@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Scrollbar invisível */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scrollbar fina e discreta */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #c7d2fe;
+  border-radius: 4px;
+}
+.dark .scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+/* Dark mode suave em toda a aplicação */
+.dark body {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+/* Transições suaves */
+* {
+  transition-property: background-color, border-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+}
+
+/* Exceção para animações próprias */
+button, a {
+  transition-property: all;
+  transition-duration: 200ms;
+}
