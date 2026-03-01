@@ -21,7 +21,6 @@ interface AulaParaSubstituir {
   substitutoSelecionado: string;
 }
 
-// Prioridade de substituição conforme regras
 type PrioridadeLabel =
   | 'A) Mesma Área — Menor Carga'
   | 'B) Área Diversa — Menor Carga'
@@ -78,50 +77,46 @@ export default function SubstituicaoTab({
   const [aulasParaSubstituir, setAulasParaSubstituir] = useState<AulaParaSubstituir[]>([]);
   const [escalaGerada, setEscalaGerada] = useState(false);
   const [expandirRegras, setExpandirRegras] = useState(false);
+  const [buscaRealizada, setBuscaRealizada] = useState(false);
+  const [msgBusca, setMsgBusca] = useState<string>('');
 
   // Retorna a área do professor
   const getAreaDoProfessor = (professorId: string): AreaConhecimento | null => {
     return areas.find(a => a.professorIds.includes(professorId)) || null;
   };
 
-  // (getAreaDaDisciplina removida — a prioridade compara área do substituto com área do professor ausente)
-
   // Verifica se um professor é articulador de alguma área
   const isArticulador = (professorId: string): boolean => {
     return areas.some(a => a.articuladorId === professorId);
   };
 
-  // Calcula total de aulas do professor (fixas + extras)
+  // Calcula total de aulas do professor (atribuições + extras)
   const getTotalAulas = (prof: Professor): number => {
-    const fixas = aulas.filter(a => a.professorId === prof.id).length;
+    const fixasPlanilha = prof.atribuicoes.reduce((sum, a) => sum + a.aulasAtribuidas, 0);
+    const fixasGrade = aulas.filter(a => a.professorId === prof.id).length;
+    const fixas = fixasPlanilha > 0 ? fixasPlanilha : fixasGrade;
     return fixas + prof.aulasExtras;
   };
 
-  // ===== LÓGICA CENTRAL DE PRIORIDADE =====
-  // A comparação de área é feita entre o SUBSTITUTO e o PROFESSOR QUE FALTOU
-  // (não pela disciplina), pois a regra é de área do docente, não da matéria.
-  const getProfessoresDisponiveis = (horarioAula: number, _disciplinaId: string): ProfessorDisponivel[] => {
-    // Área do professor que faltou — é o ponto de referência das regras A, B, C, D
+  // Classificação de disponíveis por prioridade
+  const getProfessoresDisponiveis = (horarioAula: number): ProfessorDisponivel[] => {
     const areaDoProfFaltou = professorFaltouObj ? getAreaDoProfessor(professorFaltouObj.id) : null;
 
     const candidatos = professores.filter(prof => {
-      // Não pode ser o próprio professor que faltou
       if (prof.id === professorFaltou) return false;
-
-      // Verificar limite semanal
       const total = getTotalAulas(prof);
       if (total >= limiteAulas) return false;
-
-      // Verificar se está livre no horário (não tem aula naquele dia/horário)
+      // Verifica conflito de horário na grade
       const ocupado = aulas.some(
-        a => a.professorId === prof.id && a.diaSemana === diaSemana && a.horario === horarioAula
+        a =>
+          String(a.professorId).trim() === String(prof.id).trim() &&
+          Number(a.diaSemana) === Number(diaSemana) &&
+          Number(a.horario) === Number(horarioAula)
       );
       if (ocupado) return false;
-
       return true;
     });
 
-    // Classificar por prioridade
     const classificados: ProfessorDisponivel[] = candidatos.map(prof => {
       const totalAulas = getTotalAulas(prof);
       const saldo = limiteAulas - totalAulas;
@@ -129,72 +124,98 @@ export default function SubstituicaoTab({
       const articulador = isArticulador(prof.id);
       const areaNome = areaDoProfSubstituto?.nome || '—';
 
-      // Mesma área = área do substituto é igual à área do professor que FALTOU
       const mesmArea =
         areaDoProfFaltou !== null &&
         areaDoProfSubstituto !== null &&
         areaDoProfSubstituto.id === areaDoProfFaltou.id;
 
-      // REGRA A: mesma área + menor carga (não articulador)
       if (mesmArea && !articulador) {
-        return {
-          professor: prof, prioridade: 1,
-          label: 'A) Mesma Área — Menor Carga',
-          totalAulas, saldo, mesmArea, isArticulador: false, areaNome,
-        };
+        return { professor: prof, prioridade: 1, label: 'A) Mesma Área — Menor Carga', totalAulas, saldo, mesmArea, isArticulador: false, areaNome };
       }
-
-      // REGRA C: articulador da mesma área
       if (mesmArea && articulador) {
-        return {
-          professor: prof, prioridade: 3,
-          label: 'C) Articulador — Mesma Área',
-          totalAulas, saldo, mesmArea, isArticulador: true, areaNome,
-        };
+        return { professor: prof, prioridade: 3, label: 'C) Articulador — Mesma Área', totalAulas, saldo, mesmArea, isArticulador: true, areaNome };
       }
-
-      // REGRA D: articulador de área diversa com menor carga
       if (!mesmArea && articulador) {
-        return {
-          professor: prof, prioridade: 4,
-          label: 'D) Articulador — Menor Carga',
-          totalAulas, saldo, mesmArea: false, isArticulador: true, areaNome,
-        };
+        return { professor: prof, prioridade: 4, label: 'D) Articulador — Menor Carga', totalAulas, saldo, mesmArea: false, isArticulador: true, areaNome };
       }
-
-      // REGRA B: área diversa + menor carga
-      return {
-        professor: prof, prioridade: 2,
-        label: 'B) Área Diversa — Menor Carga',
-        totalAulas, saldo, mesmArea: false, isArticulador: false, areaNome,
-      };
+      return { professor: prof, prioridade: 2, label: 'B) Área Diversa — Menor Carga', totalAulas, saldo, mesmArea: false, isArticulador: false, areaNome };
     });
 
-    // Ordenar: primeiro por prioridade (1→4), depois por menor totalAulas dentro de cada grupo
     return classificados.sort((a, b) => {
       if (a.prioridade !== b.prioridade) return a.prioridade - b.prioridade;
       return a.totalAulas - b.totalAulas;
     });
   };
 
+  // ── BUSCA MANUAL ──
   const buscarAulas = () => {
-    if (!professorFaltou) return;
+    if (!professorFaltou || !professorFaltouObj) return;
 
-    const aulasDoDia = aulas.filter(
-      a => a.professorId === professorFaltou && a.diaSemana === diaSemana
+    setBuscaRealizada(true);
+    setMsgBusca('');
+    setEscalaGerada(false);
+
+    const diaSemanaNum = Number(diaSemana);
+
+    // Busca na grade montada
+    const aulasDoProfessor = aulas.filter(
+      a => String(a.professorId).trim() === String(professorFaltou).trim()
     );
 
-    const aulasComHorario = aulasDoDia.map(aula => {
-      const horario = horarios.find(h => h.aula === aula.horario);
-      return {
-        aula,
-        horario: horario || { aula: aula.horario, inicio: '', fim: '' },
-        substitutoSelecionado: '',
-      };
-    }).sort((a, b) => a.aula.horario - b.aula.horario);
+    const aulasDoDia = aulasDoProfessor.filter(
+      a => Number(a.diaSemana) === diaSemanaNum
+    );
 
-    setAulasParaSubstituir(aulasComHorario);
-    setEscalaGerada(false);
+    if (aulasDoDia.length > 0) {
+      // ✅ Encontrou aulas na grade para este dia
+      const aulasComHorario = aulasDoDia
+        .map(aula => ({
+          aula,
+          horario: horarios.find(h => Number(h.aula) === Number(aula.horario))
+            || { aula: Number(aula.horario), inicio: '--', fim: '--' },
+          substitutoSelecionado: '',
+        }))
+        .sort((a, b) => Number(a.aula.horario) - Number(b.aula.horario));
+
+      setAulasParaSubstituir(aulasComHorario);
+      return;
+    }
+
+    // Sem aulas na grade — tenta pelas atribuições da planilha
+    if (professorFaltouObj.atribuicoes.length > 0) {
+      const horariosDoDia = horarios.slice(0, 9);
+      const aulasVirtuais: AulaParaSubstituir[] = [];
+      let idx = 0;
+
+      for (const atrib of professorFaltouObj.atribuicoes) {
+        const qtdNoDia = Math.max(1, Math.round(atrib.aulasAtribuidas / 5));
+        for (let i = 0; i < qtdNoDia && idx < horariosDoDia.length; i++, idx++) {
+          const horario = horariosDoDia[idx];
+          aulasVirtuais.push({
+            aula: {
+              id: `virt_${professorFaltou}_${atrib.turmaId}_${atrib.disciplinaId}_h${horario.aula}`,
+              professorId: professorFaltou,
+              turmaId: atrib.turmaId,
+              disciplinaId: atrib.disciplinaId,
+              diaSemana: diaSemanaNum,
+              horario: horario.aula,
+            },
+            horario,
+            substitutoSelecionado: '',
+          });
+        }
+      }
+
+      if (aulasVirtuais.length > 0) {
+        setAulasParaSubstituir(aulasVirtuais);
+        setMsgBusca('grade-vazia');
+        return;
+      }
+    }
+
+    // Nada encontrado
+    setAulasParaSubstituir([]);
+    setMsgBusca('sem-dados');
   };
 
   const selecionarSubstituto = (index: number, professorId: string) => {
@@ -236,6 +257,8 @@ export default function SubstituicaoTab({
     setProfessorFaltou('');
     setAulasParaSubstituir([]);
     setEscalaGerada(false);
+    setBuscaRealizada(false);
+    setMsgBusca('');
   };
 
   const professorFaltouObj = professores.find(p => p.id === professorFaltou);
@@ -272,30 +295,10 @@ export default function SubstituicaoTab({
         {expandirRegras && (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-t border-slate-600">
             {[
-              {
-                letra: 'A', cor: 'from-emerald-500 to-emerald-600', icone: '🟢',
-                titulo: 'Mesma Área — Menor Carga',
-                desc: 'Docentes com menor carga horária da mesma Área de Conhecimento da disciplina ausente.',
-                prioridade: '1ª Prioridade',
-              },
-              {
-                letra: 'B', cor: 'from-blue-500 to-blue-600', icone: '🔵',
-                titulo: 'Área Diversa — Menor Carga',
-                desc: 'Docentes com menor carga horária de Área de Conhecimento diferente.',
-                prioridade: '2ª Prioridade',
-              },
-              {
-                letra: 'C', cor: 'from-amber-500 to-amber-600', icone: '🟡',
-                titulo: 'Articulador — Mesma Área',
-                desc: 'Professor Articulador da mesma Área de Conhecimento.',
-                prioridade: '3ª Prioridade',
-              },
-              {
-                letra: 'D', cor: 'from-purple-500 to-purple-600', icone: '🟣',
-                titulo: 'Articulador — Menor Carga',
-                desc: 'Professor Articulador de Área de Conhecimento com menor carga horária.',
-                prioridade: '4ª Prioridade',
-              },
+              { letra: 'A', cor: 'from-emerald-500 to-emerald-600', icone: '🟢', titulo: 'Mesma Área — Menor Carga', desc: 'Docentes com menor carga horária da mesma Área de Conhecimento.', prioridade: '1ª Prioridade' },
+              { letra: 'B', cor: 'from-blue-500 to-blue-600', icone: '🔵', titulo: 'Área Diversa — Menor Carga', desc: 'Docentes com menor carga horária de Área de Conhecimento diferente.', prioridade: '2ª Prioridade' },
+              { letra: 'C', cor: 'from-amber-500 to-amber-600', icone: '🟡', titulo: 'Articulador — Mesma Área', desc: 'Professor Articulador da mesma Área de Conhecimento.', prioridade: '3ª Prioridade' },
+              { letra: 'D', cor: 'from-purple-500 to-purple-600', icone: '🟣', titulo: 'Articulador — Menor Carga', desc: 'Professor Articulador de Área de Conhecimento com menor carga horária.', prioridade: '4ª Prioridade' },
             ].map(r => (
               <div key={r.letra} className="p-5 border-r border-slate-600 last:border-r-0">
                 <div className={`inline-flex items-center gap-2 bg-gradient-to-r ${r.cor} text-white text-xs font-bold px-3 py-1 rounded-full mb-3`}>
@@ -316,16 +319,23 @@ export default function SubstituicaoTab({
       <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
         <div className="bg-gradient-to-r from-red-600 to-rose-500 px-6 py-4">
           <h2 className="text-white font-bold text-xl">🔄 Registrar Ausência e Gerar Escala</h2>
-          <p className="text-red-100 text-sm">Selecione o professor, o dia e busque as aulas para substituição</p>
+          <p className="text-red-100 text-sm">Selecione o professor e o dia, depois clique em "Buscar Aulas"</p>
         </div>
 
         <div className="p-6">
-          <div className="grid md:grid-cols-4 gap-4">
+          <div className="grid md:grid-cols-4 gap-4 items-end">
+            {/* Professor ausente */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">👨‍🏫 Professor Ausente</label>
               <select
                 value={professorFaltou}
-                onChange={(e) => { setProfessorFaltou(e.target.value); setAulasParaSubstituir([]); setEscalaGerada(false); }}
+                onChange={(e) => {
+                  setProfessorFaltou(e.target.value);
+                  setAulasParaSubstituir([]);
+                  setEscalaGerada(false);
+                  setBuscaRealizada(false);
+                  setMsgBusca('');
+                }}
                 className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-red-400 focus:border-red-400 bg-white"
               >
                 <option value="">Selecione o professor</option>
@@ -335,9 +345,10 @@ export default function SubstituicaoTab({
               </select>
             </div>
 
-            {/* Info da área do professor que faltou */}
+            {/* Área do professor */}
             {professorFaltouObj && (
-              <div className="flex items-end">
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 mb-2">🧩 Área de Conhecimento</label>
                 <div className={cn(
                   'w-full px-4 py-2.5 rounded-xl border-2 text-sm font-medium',
                   areaProfFaltou
@@ -345,18 +356,25 @@ export default function SubstituicaoTab({
                     : 'bg-yellow-50 border-yellow-200 text-yellow-700'
                 )}>
                   {areaProfFaltou
-                    ? <><span className="text-lg">{areaProfFaltou.icone}</span> {areaProfFaltou.nome}</>
+                    ? <><span className="text-lg mr-1">{areaProfFaltou.icone}</span>{areaProfFaltou.nome}</>
                     : '⚠️ Sem Área definida'
                   }
                 </div>
               </div>
             )}
 
+            {/* Dia da semana */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">📅 Dia da Semana</label>
               <select
                 value={diaSemana}
-                onChange={(e) => { setDiaSemana(parseInt(e.target.value)); setAulasParaSubstituir([]); setEscalaGerada(false); }}
+                onChange={(e) => {
+                  setDiaSemana(parseInt(e.target.value));
+                  setAulasParaSubstituir([]);
+                  setEscalaGerada(false);
+                  setBuscaRealizada(false);
+                  setMsgBusca('');
+                }}
                 className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-red-400 focus:border-red-400 bg-white"
               >
                 {DIAS_SEMANA.map(dia => (
@@ -365,6 +383,7 @@ export default function SubstituicaoTab({
               </select>
             </div>
 
+            {/* Data */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">🗓️ Data</label>
               <input
@@ -376,14 +395,15 @@ export default function SubstituicaoTab({
             </div>
           </div>
 
-          <div className="mt-4">
+          {/* Botão buscar — MANUAL */}
+          <div className="mt-5">
             <button
               onClick={buscarAulas}
               disabled={!professorFaltou}
               className={cn(
-                'px-8 py-3 rounded-xl font-bold text-white transition-all shadow-md',
+                'px-8 py-3 rounded-xl font-bold text-white transition-all shadow-md text-base',
                 professorFaltou
-                  ? 'bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 hover:shadow-lg'
+                  ? 'bg-gradient-to-r from-red-600 to-rose-500 hover:from-red-700 hover:to-rose-600 hover:shadow-lg active:scale-95'
                   : 'bg-gray-300 cursor-not-allowed'
               )}
             >
@@ -393,10 +413,46 @@ export default function SubstituicaoTab({
         </div>
       </div>
 
+      {/* === AVISO: grade não montada, aulas geradas pelas atribuições === */}
+      {msgBusca === 'grade-vazia' && aulasParaSubstituir.length > 0 && (
+        <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 flex items-start gap-3">
+          <span className="text-xl mt-0.5">ℹ️</span>
+          <div>
+            <p className="text-blue-800 font-semibold text-sm">
+              Grade Horária não montada — horários estimados pelas atribuições da planilha
+            </p>
+            <p className="text-blue-600 text-sm mt-0.5">
+              Para horários precisos, monte a grade na aba <strong>Grade Horária</strong>.
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* === AVISO: nenhuma aula encontrada após busca === */}
+      {buscaRealizada && msgBusca === 'sem-dados' && (
+        <div className="bg-amber-50 border-2 border-amber-300 rounded-2xl p-6 text-center">
+          <div className="text-4xl mb-3">📭</div>
+          <p className="text-amber-800 font-bold text-lg mb-1">
+            Nenhuma aula encontrada para {professorFaltouObj?.nome}
+          </p>
+          <p className="text-amber-700 text-sm mb-4">
+            Não há aulas na Grade Horária nem atribuições cadastradas para este professor.
+          </p>
+          <div className="text-left bg-white border border-amber-200 rounded-xl p-4 max-w-md mx-auto">
+            <p className="text-amber-800 font-semibold text-sm mb-2">O que fazer:</p>
+            <ul className="text-amber-700 text-sm space-y-1 list-disc list-inside">
+              <li>Acesse a aba <strong>Grade Horária</strong> e monte os horários</li>
+              <li>Ou reimporte a planilha na aba <strong>Configurações</strong></li>
+              <li>Verifique se o professor correto foi selecionado</li>
+            </ul>
+          </div>
+        </div>
+      )}
+
       {/* === AULAS PARA SUBSTITUIR === */}
       {aulasParaSubstituir.length > 0 && (
         <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-          <div className="bg-gradient-to-r from-slate-700 to-slate-600 px-6 py-4 flex justify-between items-center">
+          <div className="bg-gradient-to-r from-slate-700 to-slate-600 px-6 py-4 flex justify-between items-center flex-wrap gap-3">
             <div>
               <h3 className="text-white font-bold text-lg">
                 📚 Aulas de {professorFaltouObj?.nome}
@@ -419,12 +475,10 @@ export default function SubstituicaoTab({
             {aulasParaSubstituir.map((item, index) => {
               const turma = turmas.find(t => t.id === item.aula.turmaId);
               const disciplina = disciplinas.find(d => d.id === item.aula.disciplinaId);
-              const disponiveis = getProfessoresDisponiveis(item.aula.horario, item.aula.disciplinaId);
+              const disponiveis = getProfessoresDisponiveis(item.aula.horario);
               const substitutoObj = disponiveis.find(d => d.professor.id === item.substitutoSelecionado);
-              // Área exibida no badge é a do PROFESSOR QUE FALTOU (referência das regras)
-              const areaDisciplina = areaProfFaltou;
 
-              // Agrupar disponíveis por prioridade
+              // Agrupa por prioridade
               const grupos: Record<number, ProfessorDisponivel[]> = { 1: [], 2: [], 3: [], 4: [] };
               disponiveis.forEach(d => grupos[d.prioridade].push(d));
 
@@ -453,10 +507,10 @@ export default function SubstituicaoTab({
                     <div className="bg-purple-100 text-purple-700 text-sm font-semibold px-3 py-1 rounded-full">
                       {turma?.nome}
                     </div>
-                    {areaDisciplina && (
+                    {areaProfFaltou && (
                       <div className="bg-slate-100 text-slate-600 text-sm px-3 py-1 rounded-full flex items-center gap-1">
-                        <span>{areaDisciplina.icone}</span>
-                        <span>{areaDisciplina.nome}</span>
+                        <span>{areaProfFaltou.icone}</span>
+                        <span>{areaProfFaltou.nome}</span>
                       </div>
                     )}
                     {item.substitutoSelecionado && substitutoObj && (
@@ -483,18 +537,15 @@ export default function SubstituicaoTab({
                             👇 Selecione o substituto ({disponiveis.length} disponível{disponiveis.length !== 1 ? 'is' : ''})
                           </p>
 
-                          {/* Grupos por prioridade */}
                           {([1, 2, 3, 4] as const).map(prioridade => {
                             const grupo = grupos[prioridade];
                             if (grupo.length === 0) return null;
-
                             const labels: Record<number, string> = {
                               1: 'A) Mesma Área — Menor Carga',
                               2: 'B) Área Diversa — Menor Carga',
                               3: 'C) Articulador — Mesma Área',
                               4: 'D) Articulador — Menor Carga',
                             };
-
                             return (
                               <div key={prioridade} className={cn('rounded-xl border p-3', PRIORIDADE_COR[prioridade])}>
                                 <div className="flex items-center gap-2 mb-2">
@@ -503,7 +554,6 @@ export default function SubstituicaoTab({
                                   </span>
                                   <span className="text-xs font-semibold opacity-80">{labels[prioridade]}</span>
                                 </div>
-
                                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                                   {grupo.map(d => {
                                     const selecionado = item.substitutoSelecionado === d.professor.id;
@@ -518,7 +568,6 @@ export default function SubstituicaoTab({
                                             : 'border-white bg-white hover:border-gray-300 hover:shadow'
                                         )}
                                       >
-                                        {/* Avatar */}
                                         <div className={cn(
                                           'w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-xs flex-shrink-0',
                                           PRIORIDADE_BADGE[prioridade]
@@ -608,17 +657,6 @@ export default function SubstituicaoTab({
         </div>
       )}
 
-      {/* Mensagem sem aulas */}
-      {professorFaltou && aulasParaSubstituir.length === 0 && !escalaGerada && (
-        <div className="bg-yellow-50 border-2 border-yellow-200 rounded-2xl p-8 text-center">
-          <div className="text-4xl mb-3">🗓️</div>
-          <p className="text-yellow-800 font-semibold text-lg">
-            {professorFaltouObj?.nome} não tem aulas cadastradas na grade para {DIAS_SEMANA.find(d => d.valor === diaSemana)?.nome}.
-          </p>
-          <p className="text-yellow-600 text-sm mt-2">Verifique a Grade Horária e adicione as aulas deste professor.</p>
-        </div>
-      )}
-
       {/* === PAINEL DE DISPONIBILIDADE GERAL === */}
       <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
         <div className="bg-gradient-to-r from-indigo-600 to-blue-500 px-6 py-4">
@@ -633,7 +671,6 @@ export default function SubstituicaoTab({
             .map(({ prof, total, saldo, area }) => {
               const percentual = (total / limiteAulas) * 100;
               const articulador = isArticulador(prof.id);
-
               return (
                 <div
                   key={prof.id}
@@ -641,13 +678,13 @@ export default function SubstituicaoTab({
                     'border-2 rounded-xl p-3 transition-all',
                     saldo <= 0 ? 'border-red-200 bg-red-50' :
                     saldo <= 3 ? 'border-amber-200 bg-amber-50' :
-                    'border-emerald-200 bg-emerald-50'
+                    'border-slate-100 bg-slate-50'
                   )}
                 >
                   <div className="flex items-center gap-3 mb-2">
                     <div className={cn(
                       'w-10 h-10 rounded-xl flex items-center justify-center text-white font-bold text-xs flex-shrink-0',
-                      saldo <= 0 ? 'bg-red-500' : saldo <= 3 ? 'bg-amber-500' : 'bg-emerald-500'
+                      saldo <= 0 ? 'bg-red-500' : saldo <= 3 ? 'bg-amber-500' : 'bg-blue-500'
                     )}>
                       {prof.nome.split(' ').map(n => n[0]).slice(0, 2).join('')}
                     </div>
@@ -656,14 +693,12 @@ export default function SubstituicaoTab({
                         <p className="font-bold text-gray-800 text-sm truncate">{prof.nome}</p>
                         {articulador && <span title="Articulador" className="text-amber-500">⭐</span>}
                       </div>
-                      {area && (
-                        <p className="text-xs text-gray-500">{area.icone} {area.nome}</p>
-                      )}
+                      {area && <p className="text-xs text-gray-500">{area.icone} {area.nome}</p>}
                     </div>
                     <div className="text-right flex-shrink-0">
                       <span className={cn(
                         'font-black text-lg',
-                        saldo <= 0 ? 'text-red-600' : saldo <= 3 ? 'text-amber-600' : 'text-emerald-600'
+                        saldo <= 0 ? 'text-red-600' : saldo <= 3 ? 'text-amber-600' : 'text-blue-600'
                       )}>
                         {total}/{limiteAulas}
                       </span>
@@ -674,7 +709,7 @@ export default function SubstituicaoTab({
                       className={cn(
                         'h-2 rounded-full transition-all',
                         percentual >= 100 ? 'bg-red-500' :
-                        percentual >= 80 ? 'bg-amber-500' : 'bg-emerald-500'
+                        percentual >= 80 ? 'bg-amber-500' : 'bg-blue-500'
                       )}
                       style={{ width: `${Math.min(percentual, 100)}%` }}
                     />
@@ -683,7 +718,7 @@ export default function SubstituicaoTab({
                     <span className="text-gray-500">{aulas.filter(a => a.professorId === prof.id).length} fixas · +{prof.aulasExtras} extras</span>
                     <span className={cn(
                       'font-semibold',
-                      saldo <= 0 ? 'text-red-600' : saldo <= 3 ? 'text-amber-600' : 'text-emerald-700'
+                      saldo <= 0 ? 'text-red-600' : saldo <= 3 ? 'text-amber-600' : 'text-blue-600'
                     )}>
                       {saldo <= 0 ? '🚫 Limite atingido' : `saldo: ${saldo}`}
                     </span>

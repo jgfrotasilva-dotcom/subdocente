@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="80" fill="#4f46e5"/>
+  <rect x="60" y="100" width="392" height="312" rx="20" fill="#312e81"/>
+  <rect x="80" y="120" width="352" height="272" rx="12" fill="#1e1b4b"/>
+  <!-- Header bar -->
+  <rect x="80" y="120" width="352" height="48" rx="12" fill="#4f46e5"/>
+  <!-- Title text simulation -->
+  <rect x="100" y="136" width="160" height="14" rx="7" fill="white" opacity="0.9"/>
+  <rect x="100" y="155" width="80" height="8" rx="4" fill="white" opacity="0.5"/>
+  <!-- Grid lines -->
+  <line x1="80" y1="200" x2="432" y2="200" stroke="#312e81" stroke-width="2"/>
+  <line x1="80" y1="240" x2="432" y2="240" stroke="#312e81" stroke-width="2"/>
+  <line x1="80" y1="280" x2="432" y2="280" stroke="#312e81" stroke-width="2"/>
+  <line x1="80" y1="320" x2="432" y2="320" stroke="#312e81" stroke-width="2"/>
+  <line x1="160" y1="168" x2="160" y2="392" stroke="#312e81" stroke-width="2"/>
+  <line x1="230" y1="168" x2="230" y2="392" stroke="#312e81" stroke-width="2"/>
+  <line x1="300" y1="168" x2="300" y2="392" stroke="#312e81" stroke-width="2"/>
+  <line x1="370" y1="168" x2="370" y2="392" stroke="#312e81" stroke-width="2"/>
+  <!-- Colored cells -->
+  <rect x="162" y="202" width="66" height="36" rx="6" fill="#10b981" opacity="0.8"/>
+  <rect x="232" y="202" width="66" height="36" rx="6" fill="#f59e0b" opacity="0.8"/>
+  <rect x="302" y="202" width="66" height="36" rx="6" fill="#6366f1" opacity="0.8"/>
+  <rect x="162" y="242" width="66" height="36" rx="6" fill="#ec4899" opacity="0.8"/>
+  <rect x="302" y="242" width="66" height="36" rx="6" fill="#10b981" opacity="0.8"/>
+  <rect x="372" y="242" width="58" height="36" rx="6" fill="#f59e0b" opacity="0.8"/>
+  <rect x="232" y="282" width="66" height="36" rx="6" fill="#6366f1" opacity="0.8"/>
+  <rect x="162" y="322" width="66" height="36" rx="6" fill="#f59e0b" opacity="0.8"/>
+  <rect x="302" y="322" width="66" height="36" rx="6" fill="#ec4899" opacity="0.8"/>
+  <!-- Row labels -->
+  <rect x="82" y="202" width="72" height="36" rx="6" fill="#374151" opacity="0.6"/>
+  <rect x="82" y="242" width="72" height="36" rx="6" fill="#374151" opacity="0.6"/>
+  <rect x="82" y="282" width="72" height="36" rx="6" fill="#374151" opacity="0.6"/>
+  <rect x="82" y="322" width="72" height="36" rx="6" fill="#374151" opacity="0.6"/>
+  <!-- Bell icon (notification) -->
+  <circle cx="390" cy="144" r="16" fill="#f59e0b"/>
+  <text x="390" y="150" text-anchor="middle" fill="white" font-size="18" font-weight="bold">!</text>
+</svg>

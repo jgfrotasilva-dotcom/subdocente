@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-type Secao = 'visao-geral' | 'fluxo' | 'regras' | 'passo-a-passo' | 'exemplos' | 'duvidas';
+type Secao = 'visao-geral' | 'fluxo' | 'regras' | 'passo-a-passo' | 'exemplos' | 'duvidas' | 'offline';
 
 const secoes = [
   { id: 'visao-geral', icon: '🏫', label: 'Visão Geral' },
@@ -9,6 +9,7 @@ const secoes = [
   { id: 'passo-a-passo', icon: '👣', label: 'Passo a Passo' },
   { id: 'exemplos', icon: '💡', label: 'Exemplos Práticos' },
   { id: 'duvidas', icon: '❓', label: 'Dúvidas Frequentes' },
+  { id: 'offline', icon: '📲', label: 'Uso Offline / Instalar' },
 ];
 
 export default function AjudaTab() {
@@ -722,6 +723,285 @@ export default function AjudaTab() {
               <strong> Regras</strong>, <strong>Passo a Passo</strong> e <strong>Exemplos Práticos</strong>.
             </p>
           </div>
+        </div>
+      )}
+
+      {/* ── USO OFFLINE / PWA ───────────────────────────────── */}
+      {secaoAtiva === 'offline' && (
+        <div className="space-y-6">
+
+          {/* Header */}
+          <div className="bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-600 rounded-2xl p-8 text-white shadow-xl">
+            <div className="flex items-center gap-4 mb-3">
+              <div className="text-5xl">📲</div>
+              <div>
+                <h1 className="text-3xl font-bold">Uso Offline & Instalação</h1>
+                <p className="text-blue-200 text-lg">O sistema funciona mesmo sem internet!</p>
+              </div>
+            </div>
+            <p className="text-blue-100 text-sm max-w-3xl">
+              O SubstDoc é um <strong>PWA (Progressive Web App)</strong> — isso significa que pode ser instalado
+              como um aplicativo no seu computador, tablet ou celular e funcionar completamente offline,
+              sem depender de internet.
+            </p>
+          </div>
+
+          {/* O que é PWA */}
+          <div className="bg-white rounded-2xl shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+              🤔 O que é um PWA?
+            </h2>
+            <div className="grid md:grid-cols-3 gap-6 mb-6">
+              {[
+                { icon: '💻', title: 'Funciona como App', desc: 'Aparece no menu Iniciar (Windows) ou na área de trabalho como qualquer outro programa. Abre sem precisar do navegador.' },
+                { icon: '📡', title: 'Funciona Offline', desc: 'Todos os dados ficam salvos no dispositivo. Sem internet? Tudo continua funcionando normalmente.' },
+                { icon: '🔄', title: 'Sincroniza ao Conectar', desc: 'Quando a internet voltar, o indicador muda de laranja para verde. Use Salvar Backup para compartilhar.' },
+              ].map(c => (
+                <div key={c.title} className="bg-blue-50 border border-blue-200 rounded-xl p-5 text-center">
+                  <div className="text-4xl mb-3">{c.icon}</div>
+                  <h3 className="font-bold text-blue-800 mb-2">{c.title}</h3>
+                  <p className="text-blue-700 text-sm">{c.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* Indicadores */}
+            <div className="bg-gray-50 rounded-xl p-5 border border-gray-200">
+              <h3 className="font-bold text-gray-800 mb-3">📊 Indicadores de Status (canto superior do sistema)</h3>
+              <div className="space-y-3">
+                <div className="flex items-center gap-4 bg-white rounded-lg p-3 border border-gray-200">
+                  <div className="flex items-center gap-2 px-3 py-1 bg-green-500/20 text-green-700 border border-green-500/30 rounded-full text-sm font-medium">
+                    <span className="w-2 h-2 rounded-full bg-green-400 inline-block"></span>
+                    Online
+                  </div>
+                  <p className="text-gray-600 text-sm">Conectado à internet — tudo funcionando normalmente</p>
+                </div>
+                <div className="flex items-center gap-4 bg-white rounded-lg p-3 border border-gray-200">
+                  <div className="flex items-center gap-2 px-3 py-1 bg-orange-500/20 text-orange-700 border border-orange-500/30 rounded-full text-sm font-medium animate-pulse">
+                    <span className="w-2 h-2 rounded-full bg-orange-400 inline-block"></span>
+                    Offline
+                  </div>
+                  <p className="text-gray-600 text-sm">Sem internet — sistema funcionando localmente, dados salvos no dispositivo</p>
+                </div>
+                <div className="flex items-center gap-4 bg-white rounded-lg p-3 border border-gray-200">
+                  <div className="flex items-center gap-2 px-3 py-1 bg-purple-500/20 text-purple-700 border border-purple-500/30 rounded-full text-sm font-medium">
+                    ✓ App
+                  </div>
+                  <p className="text-gray-600 text-sm">Sistema instalado como PWA no dispositivo</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Como instalar */}
+          <div className="bg-white rounded-2xl shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+              🔧 Como Instalar no seu Dispositivo
+            </h2>
+
+            <div className="space-y-6">
+
+              {/* Windows/Chrome */}
+              <div className="border border-blue-200 rounded-xl overflow-hidden">
+                <div className="bg-blue-600 text-white p-4 flex items-center gap-3">
+                  <span className="text-2xl">🖥️</span>
+                  <div>
+                    <div className="font-bold">Windows — Google Chrome ou Edge</div>
+                    <div className="text-blue-200 text-sm">Método mais comum para computadores</div>
+                  </div>
+                </div>
+                <div className="p-5 space-y-3">
+                  {[
+                    { n: 1, txt: 'Abra o sistema no navegador Chrome ou Edge (acesse o link do Vercel/GitHub Pages)' },
+                    { n: 2, txt: 'Aguarde alguns segundos — um botão 📲 "Instalar" aparece no canto superior direito do sistema' },
+                    { n: 3, txt: 'Clique em 📲 Instalar. Uma janela de confirmação aparecerá.' },
+                    { n: 4, txt: 'Clique em "Instalar" na janela de confirmação.' },
+                    { n: 5, txt: 'Pronto! O sistema abre como um app separado. Um ícone é criado no menu Iniciar e na área de trabalho.' },
+                  ].map(p => (
+                    <div key={p.n} className="flex items-start gap-3">
+                      <span className="bg-blue-100 text-blue-700 rounded-full w-7 h-7 flex items-center justify-center font-bold text-sm flex-shrink-0">{p.n}</span>
+                      <p className="text-gray-700 text-sm pt-1">{p.txt}</p>
+                    </div>
+                  ))}
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 mt-2">
+                    <p className="text-blue-700 text-sm">
+                      <strong>Alternativa:</strong> No Chrome, clique nos 3 pontinhos (⋮) no canto superior direito do navegador → "Salvar e compartilhar" → "Criar atalho" → marque "Abrir como janela" → Criar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Android */}
+              <div className="border border-green-200 rounded-xl overflow-hidden">
+                <div className="bg-green-600 text-white p-4 flex items-center gap-3">
+                  <span className="text-2xl">📱</span>
+                  <div>
+                    <div className="font-bold">Android — Chrome</div>
+                    <div className="text-green-200 text-sm">Para tablets e celulares Android</div>
+                  </div>
+                </div>
+                <div className="p-5 space-y-3">
+                  {[
+                    { n: 1, txt: 'Abra o Chrome no Android e acesse o link do sistema' },
+                    { n: 2, txt: 'Toque nos 3 pontinhos (⋮) no canto superior direito' },
+                    { n: 3, txt: 'Toque em "Adicionar à tela inicial" ou "Instalar app"' },
+                    { n: 4, txt: 'Confirme tocando em "Adicionar" ou "Instalar"' },
+                    { n: 5, txt: 'Um ícone do SubstDoc aparece na tela inicial. Pronto!' },
+                  ].map(p => (
+                    <div key={p.n} className="flex items-start gap-3">
+                      <span className="bg-green-100 text-green-700 rounded-full w-7 h-7 flex items-center justify-center font-bold text-sm flex-shrink-0">{p.n}</span>
+                      <p className="text-gray-700 text-sm pt-1">{p.txt}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* iPhone/iPad */}
+              <div className="border border-gray-200 rounded-xl overflow-hidden">
+                <div className="bg-gray-800 text-white p-4 flex items-center gap-3">
+                  <span className="text-2xl">🍎</span>
+                  <div>
+                    <div className="font-bold">iPhone / iPad — Safari</div>
+                    <div className="text-gray-300 text-sm">Use o Safari (não o Chrome) no iOS</div>
+                  </div>
+                </div>
+                <div className="p-5 space-y-3">
+                  {[
+                    { n: 1, txt: 'Abra o Safari (não Chrome) no iPhone/iPad e acesse o link do sistema' },
+                    { n: 2, txt: 'Toque no ícone de compartilhar (caixa com seta para cima ↑) na barra inferior' },
+                    { n: 3, txt: 'Role para baixo e toque em "Adicionar à Tela de Início"' },
+                    { n: 4, txt: 'Digite um nome (ex: SubstDoc) e toque em "Adicionar"' },
+                    { n: 5, txt: 'O ícone aparece na tela inicial. Abra por lá para funcionar como app.' },
+                  ].map(p => (
+                    <div key={p.n} className="flex items-start gap-3">
+                      <span className="bg-gray-100 text-gray-700 rounded-full w-7 h-7 flex items-center justify-center font-bold text-sm flex-shrink-0">{p.n}</span>
+                      <p className="text-gray-700 text-sm pt-1">{p.txt}</p>
+                    </div>
+                  ))}
+                  <div className="bg-amber-50 border border-amber-200 rounded-lg p-3">
+                    <p className="text-amber-700 text-sm">
+                      ⚠️ No iPhone, use sempre o <strong>Safari</strong> para instalar. O Chrome no iOS não suporta instalação de PWA.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Compartilhamento */}
+          <div className="bg-white rounded-2xl shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-3">
+              🔄 Compartilhando com Outros Computadores
+            </h2>
+            <p className="text-gray-600 mb-6">
+              Como o sistema não usa um servidor central, o compartilhamento é feito por <strong>arquivo</strong>.
+              É simples e seguro — os dados ficam só com vocês.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6">
+                <h3 className="font-bold text-emerald-800 text-lg mb-4 flex items-center gap-2">
+                  📤 Para Enviar (exportar)
+                </h3>
+                <div className="space-y-3">
+                  {[
+                    'Clique em "💾 Salvar Backup" no rodapé do sistema',
+                    'Um arquivo .json é baixado (ex: substituicao-docente-15-01-2025.json)',
+                    'Envie esse arquivo por WhatsApp, e-mail ou coloque no Google Drive',
+                    'Seus colegas recebem e importam no sistema deles',
+                  ].map((p, i) => (
+                    <div key={i} className="flex items-start gap-2">
+                      <span className="bg-emerald-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs flex-shrink-0 mt-0.5">{i+1}</span>
+                      <p className="text-emerald-700 text-sm">{p}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <h3 className="font-bold text-blue-800 text-lg mb-4 flex items-center gap-2">
+                  📥 Para Receber (importar)
+                </h3>
+                <div className="space-y-3">
+                  {[
+                    'Clique em "🔄 Compartilhar / Importar" no rodapé',
+                    'Selecione a aba "📥 Importar / Carregar"',
+                    'Clique em "Selecionar arquivo" e escolha o .json recebido',
+                    'Verifique a prévia e clique em "Confirmar Importação"',
+                  ].map((p, i) => (
+                    <div key={i} className="flex items-start gap-2">
+                      <span className="bg-blue-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs flex-shrink-0 mt-0.5">{i+1}</span>
+                      <p className="text-blue-700 text-sm">{p}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-6 bg-amber-50 border border-amber-200 rounded-xl p-5">
+              <h3 className="font-bold text-amber-800 mb-2">💡 Dica: Fluxo de trabalho recomendado</h3>
+              <div className="flex flex-wrap items-center gap-2 text-sm">
+                {[
+                  { label: 'Coordenação faz alterações', cor: 'bg-blue-100 text-blue-800' },
+                  { label: '→', cor: 'text-gray-400 font-bold text-lg bg-transparent' },
+                  { label: 'Salva Backup', cor: 'bg-emerald-100 text-emerald-800' },
+                  { label: '→', cor: 'text-gray-400 font-bold text-lg bg-transparent' },
+                  { label: 'Envia por WhatsApp/Drive', cor: 'bg-amber-100 text-amber-800' },
+                  { label: '→', cor: 'text-gray-400 font-bold text-lg bg-transparent' },
+                  { label: 'Colega importa', cor: 'bg-purple-100 text-purple-800' },
+                  { label: '→', cor: 'text-gray-400 font-bold text-lg bg-transparent' },
+                  { label: 'Todos sincronizados ✅', cor: 'bg-green-100 text-green-800' },
+                ].map((s, i) => (
+                  s.label === '→'
+                    ? <span key={i} className="text-gray-400 font-bold text-xl">→</span>
+                    : <span key={i} className={`${s.cor} px-3 py-1.5 rounded-lg font-medium`}>{s.label}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Comparativo */}
+          <div className="bg-white rounded-2xl shadow-lg p-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-6">📊 Com Internet vs. Sem Internet</h2>
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="bg-gray-100">
+                    <th className="p-3 text-left text-gray-700">Funcionalidade</th>
+                    <th className="p-3 text-center text-green-700">🌐 Com Internet</th>
+                    <th className="p-3 text-center text-orange-700">📡 Sem Internet</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ['Usar o sistema normalmente', '✅', '✅'],
+                    ['Ver grade horária', '✅', '✅'],
+                    ['Registrar substituições', '✅', '✅'],
+                    ['Consultar histórico', '✅', '✅'],
+                    ['Salvar dados localmente', '✅', '✅'],
+                    ['Exportar backup (.json)', '✅', '✅'],
+                    ['Importar arquivo de colega', '✅', '✅'],
+                    ['Acessar pelo link do Vercel', '✅', '❌ (precisa estar instalado)'],
+                    ['Receber atualizações do sistema', '✅', '❌ (atualiza ao reconectar)'],
+                  ].map(([func, com, sem], i) => (
+                    <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
+                      <td className="p-3 text-gray-700">{func}</td>
+                      <td className="p-3 text-center">{com}</td>
+                      <td className="p-3 text-center">{sem}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className="mt-4 bg-indigo-50 border border-indigo-200 rounded-xl p-4">
+              <p className="text-indigo-700 text-sm">
+                <strong>💡 Conclusão:</strong> Para uso offline, instale o sistema como PWA (veja instruções acima).
+                Uma vez instalado, funciona completamente sem internet. Para usar em outro computador sem instalação,
+                é necessário acesso à internet para carregar o sistema pelo Vercel.
+              </p>
+            </div>
+          </div>
+
         </div>
       )}
     </div>

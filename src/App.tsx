@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocalStorage } from './hooks/useLocalStorage';
-import { Professor, Aula, Substituicao, Turma, Disciplina, Configuracoes, AreaConhecimento } from './types';
-import { horariosIniciais } from './data/initialData';
+import { useSupabase } from './hooks/useSupabase';
 import Header from './components/Header';
 import ConfiguracaoTab from './components/ConfiguracaoTab';
 import GradeTab from './components/GradeTab';
@@ -12,93 +11,62 @@ import AreaConhecimentoTab from './components/AreaConhecimentoTab';
 import DisponibilidadeTab from './components/DisponibilidadeTab';
 import CompartilhamentoModal from './components/CompartilhamentoModal';
 import DashboardTab from './components/DashboardTab';
+import { PWAStatus } from './components/PWAStatus';
+import InstalacaoTab from './components/InstalacaoTab';
+import SupabaseStatus from './components/SupabaseStatus';
+import SupabaseConfigModal from './components/SupabaseConfigModal';
 
-type Aba = 'dashboard' | 'configuracao' | 'areas' | 'grade' | 'disponibilidade' | 'substituicao' | 'historico' | 'ajuda';
-
-// Grade: dia -> horarioIdx -> slots
-type GradeSlot = { professorId: string; disciplinaId: string; turmaId: string };
-type Grade = Record<string, Record<number, GradeSlot[]>>;
+type Aba = 'dashboard' | 'configuracao' | 'areas' | 'grade' | 'disponibilidade' | 'substituicao' | 'historico' | 'ajuda' | 'instalar';
 
 function App() {
-  const [abaAtiva, setAbaAtiva] = useState<Aba>('dashboard');
-  const [showModal, setShowModal] = useState(false);
+  const [abaAtiva, setAbaAtiva]       = useState<Aba>('dashboard');
+  const [showModal, setShowModal]     = useState(false);
+  const [showSupaModal, setShowSupaModal] = useState(false);
   const [salvandoFlash, setSalvandoFlash] = useState(false);
-  const [darkMode, setDarkMode] = useLocalStorage<boolean>('darkMode', false);
+  const [darkMode, setDarkMode]       = useLocalStorage<boolean>('darkMode', false);
 
-  // ─── Persistência local (localStorage) ───────────────────
-  const [turmas, setTurmas]               = useLocalStorage<Turma[]>('turmas', []);
-  const [disciplinas, setDisciplinas]     = useLocalStorage<Disciplina[]>('disciplinas', []);
-  const [professores, setProfessores]     = useLocalStorage<Professor[]>('professores', []);
-  const [aulas, setAulas]                 = useLocalStorage<Aula[]>('aulas', []);
-  const [substituicoes, setSubstituicoes] = useLocalStorage<Substituicao[]>('substituicoes', []);
-  const [areas, setAreas]                 = useLocalStorage<AreaConhecimento[]>('areas', []);
-  const [gradeData, setGradeData]         = useLocalStorage<Grade>('gradeHoraria', {});
-  const [configuracoes, setConfiguracoes] = useLocalStorage<Configuracoes>('configuracoes', {
-    limiteAulasSemanais: 32,
-    horarios: horariosIniciais,
-  });
-  const [ultimoSalvamento, setUltimoSalvamento] = useLocalStorage<string>('ultimoSalvamento', '');
+  // ─── Todos os dados + sync Supabase ──────────────────────────────────────
+  const {
+    turmas,        setTurmas,
+    disciplinas,   setDisciplinas,
+    professores,   setProfessores,
+    aulas,         setAulas,
+    substituicoes, setSubstituicoes,
+    areas,         setAreas,
+    gradeData,
+    configuracoes, setConfiguracoes,
+    importarDados, limparTudo, forcarSync,
+    dadosAtuais,
+    status, ultimoSync, erroMsg, supabaseAtivo,
+  } = useSupabase();
 
-  // ─── Aplicar dark mode no <html> ─────────────────────────
+  // ─── Dark mode ────────────────────────────────────────────────────────────
   useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
+    document.documentElement.classList.toggle('dark', darkMode);
   }, [darkMode]);
 
-  // ─── Dados consolidados para export/import ────────────────
-  const dadosAtuais = { turmas, disciplinas, professores, aulas, substituicoes, areas, configuracoes, gradeData };
-
-  // ─── Exportar como backup rápido ─────────────────────────
+  // ─── Exportar backup ─────────────────────────────────────────────────────
   const salvarBackupRapido = () => {
     const payload = {
       ...dadosAtuais,
       exportadoEm: new Date().toLocaleString('pt-BR'),
-      versao: '2.0',
+      versao: '3.0',
     };
-    const json = JSON.stringify(payload, null, 2);
-    const blob = new Blob([json], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    const data = new Date().toLocaleDateString('pt-BR').replace(/\//g, '-');
-    a.href = url;
-    a.download = `substituicao-docente-${data}.json`;
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href     = url;
+    a.download = `substituicao-docente-${new Date().toLocaleDateString('pt-BR').replace(/\//g, '-')}.json`;
     a.click();
     URL.revokeObjectURL(url);
-    const agora = new Date().toLocaleString('pt-BR');
-    setUltimoSalvamento(agora);
     setSalvandoFlash(true);
     setTimeout(() => setSalvandoFlash(false), 2000);
   };
 
-  // ─── Importar ─────────────────────────────────────────────
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleImportar = (dados: any) => {
-    setTurmas(dados.turmas ?? []);
-    setDisciplinas(dados.disciplinas ?? []);
-    setProfessores(dados.professores ?? []);
-    setAulas(dados.aulas ?? []);
-    setSubstituicoes(dados.substituicoes ?? []);
-    setAreas(dados.areas ?? []);
-    if (dados.gradeData) setGradeData(dados.gradeData);
-    if (dados.configuracoes) setConfiguracoes(dados.configuracoes);
-    setUltimoSalvamento(new Date().toLocaleString('pt-BR') + ' (importado)');
-  };
-
-  // ─── Limpar tudo ─────────────────────────────────────────
+  // ─── Limpar tudo ─────────────────────────────────────────────────────────
   const limparTodosDados = () => {
     if (confirm('Tem certeza que deseja limpar TODOS os dados? Esta ação não pode ser desfeita.')) {
-      setTurmas([]);
-      setDisciplinas([]);
-      setProfessores([]);
-      setAulas([]);
-      setSubstituicoes([]);
-      setAreas([]);
-      setGradeData({});
-      setConfiguracoes({ limiteAulasSemanais: 32, horarios: horariosIniciais });
-      setUltimoSalvamento('');
+      limparTudo();
     }
   };
 
@@ -108,16 +76,13 @@ function App() {
     }
   };
 
-  const totalProfessores = professores.length;
-  const totalSubst       = substituicoes.length;
-  const totalAulasGrade  = aulas.length;
-
   const bg = darkMode
-    ? 'min-h-screen bg-gray-900 text-gray-100'
-    : 'min-h-screen bg-gradient-to-br from-slate-100 via-blue-50 to-indigo-50 text-gray-900';
+    ? 'min-h-screen bg-slate-950 text-slate-100'
+    : 'min-h-screen bg-slate-50 text-slate-900';
 
   return (
     <div className={bg}>
+      <PWAStatus />
       <Header
         abaAtiva={abaAtiva}
         setAbaAtiva={(aba) => setAbaAtiva(aba as Aba)}
@@ -125,7 +90,7 @@ function App() {
         toggleDarkMode={() => setDarkMode(!darkMode)}
       />
 
-      <main className="container mx-auto px-4 py-6 max-w-screen-xl">
+      <main className="container mx-auto px-6 py-8 max-w-screen-xl">
 
         {abaAtiva === 'dashboard' && (
           <DashboardTab
@@ -154,7 +119,7 @@ function App() {
 
         {abaAtiva === 'areas' && (
           <AreaConhecimentoTab
-            areas={areas}           setAreas={setAreas}
+            areas={areas}             setAreas={setAreas}
             professores={professores}
             disciplinas={disciplinas}
           />
@@ -163,7 +128,7 @@ function App() {
         {abaAtiva === 'grade' && (
           <GradeTab
             professores={professores}
-            aulas={aulas}           setAulas={setAulas}
+            aulas={aulas}             setAulas={setAulas}
             turmas={turmas}
             disciplinas={disciplinas}
             horarios={configuracoes.horarios}
@@ -205,23 +170,30 @@ function App() {
           />
         )}
 
-        {abaAtiva === 'ajuda' && (
-          <AjudaTab />
-        )}
+        {abaAtiva === 'ajuda' && <AjudaTab />}
+
+        {abaAtiva === 'instalar' && <InstalacaoTab />}
 
       </main>
 
-      {/* ── Footer ───────────────────────────────────────── */}
-      <footer className={`${darkMode ? 'bg-gray-950 border-t border-gray-800' : 'bg-gray-900'} text-white py-4 mt-10`}>
-        <div className="container mx-auto px-4 max-w-screen-xl">
-          <div className="flex flex-wrap items-center justify-between gap-3">
+      {/* ── Footer ─────────────────────────────────────────────────────────── */}
+      <footer className="bg-white border-t border-slate-200 mt-12">
+        <div className="container mx-auto px-6 max-w-screen-xl py-5">
+
+          {/* Linha principal */}
+          <div className="flex flex-wrap items-center justify-between gap-4">
 
             {/* Identidade */}
             <div className="flex items-center gap-3">
-              <div className="text-2xl">🏫</div>
+              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                  <polyline points="9 22 9 12 15 12 15 22"/>
+                </svg>
+              </div>
               <div>
-                <div className="text-sm font-bold">Sistema de Substituição Docente</div>
-                <div className="text-xs text-gray-400">Ensino Fundamental — 6º ao 9º ano | Período Integral</div>
+                <div className="text-sm font-semibold text-slate-800">SubstDoc</div>
+                <div className="text-xs text-slate-400">6º ao 9º ano · Período Integral</div>
               </div>
             </div>
 
@@ -229,57 +201,122 @@ function App() {
             <div className="flex items-center gap-2 flex-wrap">
               <button
                 onClick={salvarBackupRapido}
-                className={`flex items-center gap-2 px-4 py-2 rounded-xl font-semibold text-sm transition-all ${
-                  salvandoFlash ? 'bg-emerald-500 text-white scale-95' : 'bg-emerald-600 hover:bg-emerald-500 text-white'
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg font-semibold text-sm transition-all border ${
+                  salvandoFlash
+                    ? 'bg-emerald-50 text-emerald-700 border-emerald-200'
+                    : 'bg-white text-slate-700 border-slate-200 hover:bg-slate-50 hover:border-slate-300'
                 }`}
               >
-                {salvandoFlash ? '✅ Salvo!' : '💾 Salvar Backup'}
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                  <polyline points="17 21 17 13 7 13 7 21"/>
+                  <polyline points="7 3 7 8 15 8"/>
+                </svg>
+                {salvandoFlash ? 'Salvo!' : 'Salvar Backup'}
               </button>
+
               <button
                 onClick={() => setShowModal(true)}
-                className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 px-4 py-2 rounded-xl font-semibold text-sm transition-all"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-all"
               >
-                🔄 Compartilhar / Importar
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="17 1 21 5 17 9"/>
+                  <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+                  <polyline points="7 23 3 19 7 15"/>
+                  <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+                </svg>
+                Compartilhar / Importar
               </button>
+
               <button
                 onClick={resetarSemana}
-                className="flex items-center gap-2 bg-amber-600 hover:bg-amber-500 px-4 py-2 rounded-xl font-semibold text-sm transition-all"
+                className="flex items-center gap-2 bg-white hover:bg-amber-50 text-amber-700 border border-amber-200 hover:border-amber-300 px-4 py-2 rounded-lg font-semibold text-sm transition-all"
               >
-                📅 Nova Semana
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+                Nova Semana
               </button>
             </div>
 
             {/* Estatísticas */}
-            <div className="flex items-center gap-4 text-xs text-gray-400 flex-wrap">
-              <span>👨‍🏫 <strong className="text-white">{totalProfessores}</strong> prof.</span>
-              <span>📅 <strong className="text-white">{totalAulasGrade}</strong> aulas</span>
-              <span>🔄 <strong className="text-white">{totalSubst}</strong> subst.</span>
-              <span>⏱️ Limite: <strong className="text-white">{configuracoes.limiteAulasSemanais}</strong>/sem.</span>
+            <div className="flex items-center gap-5 text-xs text-slate-400 flex-wrap">
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 bg-blue-400 rounded-full inline-block"/>
+                <strong className="text-slate-700 font-semibold">{professores.length}</strong> professores
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 bg-violet-400 rounded-full inline-block"/>
+                <strong className="text-slate-700 font-semibold">{aulas.length}</strong> aulas
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full inline-block"/>
+                <strong className="text-slate-700 font-semibold">{substituicoes.length}</strong> substituições
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 bg-amber-400 rounded-full inline-block"/>
+                Limite: <strong className="text-slate-700 font-semibold">{configuracoes.limiteAulasSemanais}</strong>/sem.
+              </span>
             </div>
           </div>
 
-          {ultimoSalvamento ? (
-            <div className="mt-2 pt-2 border-t border-gray-700 text-xs text-gray-500 flex items-center gap-2">
-              <span className="text-emerald-400">✔</span>
-              Último backup: <span className="text-gray-300">{ultimoSalvamento}</span>
+          {/* Linha 2 — status e sync */}
+          <div className="mt-4 pt-4 border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
+
+            <div className="flex items-center gap-4 flex-wrap">
+              <SupabaseStatus
+                status={status}
+                ultimoSync={ultimoSync}
+                erroMsg={erroMsg}
+                supabaseAtivo={supabaseAtivo}
+                onForcarSync={forcarSync}
+                darkMode={darkMode}
+              />
+              {!supabaseAtivo && (
+                <button
+                  onClick={() => setShowSupaModal(true)}
+                  className="text-xs text-blue-500 hover:text-blue-700 font-medium transition-colors"
+                >
+                  Configurar banco de dados →
+                </button>
+              )}
+              {ultimoSync && supabaseAtivo && (
+                <span className="text-xs text-slate-400">
+                  Sincronizado: <span className="text-slate-600 font-medium">{ultimoSync}</span>
+                </span>
+              )}
             </div>
-          ) : (
-            <div className="mt-2 pt-2 border-t border-gray-700 text-xs text-gray-500">
-              💡 Dados salvos automaticamente no navegador. Clique em <strong className="text-gray-300">Salvar Backup</strong> para gerar arquivo compartilhável.
+
+            <div className="flex items-center gap-4 text-xs text-slate-400">
+              <button
+                onClick={() => setAbaAtiva('instalar')}
+                className="text-blue-500 hover:text-blue-700 font-medium transition-colors"
+              >
+                Instalar App
+              </button>
+              <span className="text-slate-300">|</span>
+              <span className="hidden sm:inline">
+                {supabaseAtivo ? '☁ Supabase ativo' : '⬡ Dados locais'}
+              </span>
             </div>
-          )}
+          </div>
         </div>
       </footer>
 
+      {/* Modais */}
       {showModal && (
         <CompartilhamentoModal
           onClose={() => setShowModal(false)}
           dados={dadosAtuais}
-          onImportar={(dados) => {
-            handleImportar(dados);
-            setShowModal(false);
-          }}
+          onImportar={(dados) => { importarDados(dados); setShowModal(false); }}
         />
+      )}
+
+      {showSupaModal && (
+        <SupabaseConfigModal onClose={() => setShowSupaModal(false)} />
       )}
     </div>
   );
