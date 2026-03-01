@@ -1,0 +1,5244 @@
+{
+  "turmas": [
+    {
+      "id": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "nome": "6º ANO A INTEGRAL 9H ANUAL",
+      "ano": 6
+    },
+    {
+      "id": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "nome": "6º ANO B INTEGRAL 9H ANUAL",
+      "ano": 6
+    },
+    {
+      "id": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "nome": "6º ANO C INTEGRAL 9H ANUAL",
+      "ano": 6
+    },
+    {
+      "id": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "nome": "7º ANO A INTEGRAL 9H ANUAL",
+      "ano": 7
+    },
+    {
+      "id": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "nome": "7º ANO B INTEGRAL 9H ANUAL",
+      "ano": 7
+    },
+    {
+      "id": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "nome": "7º ANO C INTEGRAL 9H ANUAL",
+      "ano": 7
+    },
+    {
+      "id": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "nome": "8° ANO A INTEGRAL 9H ANUAL",
+      "ano": 8
+    },
+    {
+      "id": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "nome": "8° ANO B INTEGRAL 9H ANUAL",
+      "ano": 8
+    },
+    {
+      "id": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "nome": "9° ANO A INTEGRAL 9H ANUAL",
+      "ano": 9
+    },
+    {
+      "id": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "nome": "9° ANO B INTEGRAL 9H ANUAL",
+      "ano": 9
+    }
+  ],
+  "disciplinas": [
+    {
+      "id": "disc_ARTE",
+      "nome": "ARTE",
+      "abreviacao": "ARTE"
+    },
+    {
+      "id": "disc_CIENCIAS",
+      "nome": "CIENCIAS",
+      "abreviacao": "CIEN"
+    },
+    {
+      "id": "disc_EDUCAO_FINANCEIRA",
+      "nome": "EDUCAÇÃO FINANCEIRA",
+      "abreviacao": "EDUC"
+    },
+    {
+      "id": "disc_EDUCACAO_FISICA",
+      "nome": "EDUCACAO FISICA",
+      "abreviacao": "EDUC"
+    },
+    {
+      "id": "disc_ELETIVAS",
+      "nome": "ELETIVAS",
+      "abreviacao": "ELET",
+      "multiplosDocentes": true
+    },
+    {
+      "id": "disc_ESPORTEMSICAARTE",
+      "nome": "ESPORTE-MÚSICA-ARTE",
+      "abreviacao": "ESPO"
+    },
+    {
+      "id": "disc_GEOGRAFIA",
+      "nome": "GEOGRAFIA",
+      "abreviacao": "GEOG"
+    },
+    {
+      "id": "disc_HISTORIA",
+      "nome": "HISTORIA",
+      "abreviacao": "HIST"
+    },
+    {
+      "id": "disc_LINGUA_INGLESA",
+      "nome": "LINGUA INGLESA",
+      "abreviacao": "LING"
+    },
+    {
+      "id": "disc_LINGUA_PORTUGUESA",
+      "nome": "LINGUA PORTUGUESA",
+      "abreviacao": "LING"
+    },
+    {
+      "id": "disc_MATEMATICA",
+      "nome": "MATEMATICA",
+      "abreviacao": "MATE"
+    },
+    {
+      "id": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "nome": "ORIENTAÇÃO DE ESTUDO – LÍNGUA PORTUGUESA",
+      "abreviacao": "ORIE"
+    },
+    {
+      "id": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "nome": "ORIENTAÇÃO DE ESTUDO – MATEMÁTICA",
+      "abreviacao": "ORIE"
+    },
+    {
+      "id": "disc_PRATICAS_EXPERIMENTAIS",
+      "nome": "PRATICAS EXPERIMENTAIS",
+      "abreviacao": "PRAT"
+    },
+    {
+      "id": "disc_PROJETO_DE_VIDA",
+      "nome": "PROJETO DE VIDA",
+      "abreviacao": "PROJ"
+    },
+    {
+      "id": "disc_REDAO_E_LEITURA",
+      "nome": "REDAÇÃO E LEITURA",
+      "abreviacao": "REDA"
+    },
+    {
+      "id": "disc_ROBOTICA",
+      "nome": "ROBOTICA",
+      "abreviacao": "ROBO"
+    },
+    {
+      "id": "disc_TECNOLOGIA_E_INOVACAO",
+      "nome": "TECNOLOGIA E INOVACAO",
+      "abreviacao": "TECN"
+    }
+  ],
+  "professores": [
+    {
+      "id": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "nome": "ADRIANA PAULA PAPASIDERO LODI",
+      "disciplinas": [
+        "disc_LINGUA_INGLESA",
+        "disc_ELETIVAS"
+      ],
+      "turmas": [
+        "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_C_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_LINGUA_INGLESA",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_INGLESA",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_INGLESA",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_INGLESA",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_INGLESA",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_INGLESA",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_INGLESA",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_INGLESA",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_INGLESA",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_INGLESA",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        }
+      ],
+      "aulasSemanais": 22,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "nome": "ANA CAROLINA MARIA DE SOUSA",
+      "disciplinas": [
+        "disc_PRATICAS_EXPERIMENTAIS",
+        "disc_CIENCIAS",
+        "disc_ELETIVAS"
+      ],
+      "turmas": [
+        "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_C_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_CIENCIAS",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_CIENCIAS",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 4
+        },
+        {
+          "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_CIENCIAS",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 4
+        },
+        {
+          "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_CIENCIAS",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_CIENCIAS",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        }
+      ],
+      "aulasSemanais": 29,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_CAMILA_TELLA_GUERRA",
+      "nome": "CAMILA TELLA GUERRA",
+      "disciplinas": [
+        "disc_ARTE",
+        "disc_ESPORTEMSICAARTE",
+        "disc_ELETIVAS"
+      ],
+      "turmas": [
+        "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_C_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_ARTE",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ESPORTEMSICAARTE",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ARTE",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_ARTE",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_ARTE",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_ARTE",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_ARTE",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ESPORTEMSICAARTE",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ARTE",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ESPORTEMSICAARTE",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ARTE",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ESPORTEMSICAARTE",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ARTE",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ESPORTEMSICAARTE",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ARTE",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ESPORTEMSICAARTE",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        }
+      ],
+      "aulasSemanais": 30,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_EDMILSON_MINANTE",
+      "nome": "EDMILSON MINANTE",
+      "disciplinas": [
+        "disc_ROBOTICA",
+        "disc_ELETIVAS",
+        "disc_CIENCIAS"
+      ],
+      "turmas": [
+        "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_B_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_ROBOTICA",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ROBOTICA",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_CIENCIAS",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 4
+        },
+        {
+          "disciplinaId": "disc_ROBOTICA",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_CIENCIAS",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 4
+        },
+        {
+          "disciplinaId": "disc_ROBOTICA",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        }
+      ],
+      "aulasSemanais": 18,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "nome": "JANAINA DIAS DE MORAIS COELHO",
+      "disciplinas": [
+        "disc_REDAO_E_LEITURA",
+        "disc_ELETIVAS",
+        "disc_LINGUA_PORTUGUESA"
+      ],
+      "turmas": [
+        "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_C_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_REDAO_E_LEITURA",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_REDAO_E_LEITURA",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_PORTUGUESA",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 4
+        },
+        {
+          "disciplinaId": "disc_REDAO_E_LEITURA",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_REDAO_E_LEITURA",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_REDAO_E_LEITURA",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_REDAO_E_LEITURA",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        }
+      ],
+      "aulasSemanais": 18,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_JOSELI_MARIA_DA_SILVA",
+      "nome": "JOSELI MARIA DA SILVA",
+      "disciplinas": [
+        "disc_PROJETO_DE_VIDA",
+        "disc_GEOGRAFIA",
+        "disc_ELETIVAS"
+      ],
+      "turmas": [
+        "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_C_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_PROJETO_DE_VIDA",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_GEOGRAFIA",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_PROJETO_DE_VIDA",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_GEOGRAFIA",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_PROJETO_DE_VIDA",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_GEOGRAFIA",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_PROJETO_DE_VIDA",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_GEOGRAFIA",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_GEOGRAFIA",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_GEOGRAFIA",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        }
+      ],
+      "aulasSemanais": 24,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "nome": "KAIQUE AUGUSTO CARDOSO DE SOUZA",
+      "disciplinas": [
+        "disc_EDUCAO_FINANCEIRA",
+        "disc_MATEMATICA",
+        "disc_ELETIVAS",
+        "disc_TECNOLOGIA_E_INOVACAO"
+      ],
+      "turmas": [
+        "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_B_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_MATEMATICA",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 5
+        },
+        {
+          "disciplinaId": "disc_MATEMATICA",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 5
+        },
+        {
+          "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        }
+      ],
+      "aulasSemanais": 26,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "nome": "MARCELA RODRIGUES MENDONCA",
+      "disciplinas": [
+        "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+        "disc_REDAO_E_LEITURA",
+        "disc_LINGUA_PORTUGUESA",
+        "disc_ELETIVAS"
+      ],
+      "turmas": [
+        "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_B_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_REDAO_E_LEITURA",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_PORTUGUESA",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 4
+        },
+        {
+          "disciplinaId": "disc_REDAO_E_LEITURA",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_PORTUGUESA",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 4
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_REDAO_E_LEITURA",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_PORTUGUESA",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 4
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_REDAO_E_LEITURA",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_PORTUGUESA",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 4
+        }
+      ],
+      "aulasSemanais": 32,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_MARCOS_AURELIO_MASCAGNI",
+      "nome": "MARCOS AURELIO MASCAGNI",
+      "disciplinas": [
+        "disc_MATEMATICA",
+        "disc_ELETIVAS"
+      ],
+      "turmas": [
+        "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_A_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_MATEMATICA",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 5
+        },
+        {
+          "disciplinaId": "disc_MATEMATICA",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 5
+        },
+        {
+          "disciplinaId": "disc_MATEMATICA",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 5
+        },
+        {
+          "disciplinaId": "disc_MATEMATICA",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 5
+        },
+        {
+          "disciplinaId": "disc_MATEMATICA",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 5
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        }
+      ],
+      "aulasSemanais": 27,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "nome": "MARIANA CRISTINA PIMENTA NEGRI",
+      "disciplinas": [
+        "disc_HISTORIA",
+        "disc_PROJETO_DE_VIDA",
+        "disc_ELETIVAS"
+      ],
+      "turmas": [
+        "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_C_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_HISTORIA",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_HISTORIA",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_PROJETO_DE_VIDA",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_HISTORIA",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_PROJETO_DE_VIDA",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_HISTORIA",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_PROJETO_DE_VIDA",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_HISTORIA",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        }
+      ],
+      "aulasSemanais": 20,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "nome": "MILENE APARECIDA MELA NAKAO",
+      "disciplinas": [
+        "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+        "disc_CIENCIAS",
+        "disc_ELETIVAS"
+      ],
+      "turmas": [
+        "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_C_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_CIENCIAS",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_CIENCIAS",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_CIENCIAS",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        }
+      ],
+      "aulasSemanais": 26,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_PATRICIA_DURO_MARQUES",
+      "nome": "PATRICIA DURO MARQUES",
+      "disciplinas": [
+        "disc_ROBOTICA",
+        "disc_ELETIVAS",
+        "disc_MATEMATICA",
+        "disc_TECNOLOGIA_E_INOVACAO"
+      ],
+      "turmas": [
+        "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_B_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_ROBOTICA",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ROBOTICA",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_MATEMATICA",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 5
+        },
+        {
+          "disciplinaId": "disc_ROBOTICA",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ROBOTICA",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ROBOTICA",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ROBOTICA",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        }
+      ],
+      "aulasSemanais": 23,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+      "nome": "RENATA APARECIDA IZILIANI CHERUBIM",
+      "disciplinas": [
+        "disc_GEOGRAFIA"
+      ],
+      "turmas": [
+        "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_A_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_GEOGRAFIA",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_GEOGRAFIA",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_GEOGRAFIA",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_GEOGRAFIA",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        }
+      ],
+      "aulasSemanais": 12,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_SILVIA_ELIANE_STORTI",
+      "nome": "SILVIA ELIANE STORTI",
+      "disciplinas": [
+        "disc_TECNOLOGIA_E_INOVACAO",
+        "disc_MATEMATICA",
+        "disc_ELETIVAS"
+      ],
+      "turmas": [
+        "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_C_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_MATEMATICA",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 5
+        },
+        {
+          "disciplinaId": "disc_MATEMATICA",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 5
+        },
+        {
+          "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        }
+      ],
+      "aulasSemanais": 24,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_SILVIA_MONTEIRO_ROCHA",
+      "nome": "SILVIA MONTEIRO ROCHA",
+      "disciplinas": [
+        "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+        "disc_LINGUA_PORTUGUESA",
+        "disc_ELETIVAS"
+      ],
+      "turmas": [
+        "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_C_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_LINGUA_PORTUGUESA",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 4
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_LINGUA_PORTUGUESA",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 4
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_PORTUGUESA",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 4
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_PORTUGUESA",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 4
+        },
+        {
+          "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_LINGUA_PORTUGUESA",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 4
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        }
+      ],
+      "aulasSemanais": 31,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "nome": "TIAGO DA SILVA BARBOSA",
+      "disciplinas": [
+        "disc_ELETIVAS",
+        "disc_HISTORIA",
+        "disc_PROJETO_DE_VIDA"
+      ],
+      "turmas": [
+        "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_C_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_HISTORIA",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_HISTORIA",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_HISTORIA",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_PROJETO_DE_VIDA",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_HISTORIA",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_PROJETO_DE_VIDA",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        },
+        {
+          "disciplinaId": "disc_HISTORIA",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 3
+        },
+        {
+          "disciplinaId": "disc_PROJETO_DE_VIDA",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 1
+        }
+      ],
+      "aulasSemanais": 20,
+      "aulasExtras": 0
+    },
+    {
+      "id": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "nome": "VIVIANE MIGUEL PEDRO ANTONIO",
+      "disciplinas": [
+        "disc_EDUCACAO_FISICA",
+        "disc_ESPORTEMSICAARTE",
+        "disc_ELETIVAS"
+      ],
+      "turmas": [
+        "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+        "turma_6_ANO_C_INTEGRAL_9H_ANUAL"
+      ],
+      "atribuicoes": [
+        {
+          "disciplinaId": "disc_EDUCACAO_FISICA",
+          "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_EDUCACAO_FISICA",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ESPORTEMSICAARTE",
+          "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_EDUCACAO_FISICA",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ESPORTEMSICAARTE",
+          "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_EDUCACAO_FISICA",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ESPORTEMSICAARTE",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_EDUCACAO_FISICA",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ESPORTEMSICAARTE",
+          "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_EDUCACAO_FISICA",
+          "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_EDUCACAO_FISICA",
+          "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_EDUCACAO_FISICA",
+          "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_EDUCACAO_FISICA",
+          "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_EDUCACAO_FISICA",
+          "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        },
+        {
+          "disciplinaId": "disc_ELETIVAS",
+          "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+          "aulasAtribuidas": 2
+        }
+      ],
+      "aulasSemanais": 30,
+      "aulasExtras": 0
+    }
+  ],
+  "aulas": [
+    {
+      "id": "aula_1772309594457_2e0wz",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309598728_ddu2i",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309712520_d9ny7",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309717464_nre7o",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309729232_4bfit",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309736298_9h68j",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309745760_4v23o",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309758416_pjbkz",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309762825_i8oow",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309771512_eigaa",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309781216_06ydc",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309788344_msyym",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309822329_pqp85",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309831184_0z232",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309837776_2b11t",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309848184_lm340",
+      "professorId": "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309852376_fbjvl",
+      "professorId": "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309863920_udbmc",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309876976_a4d9l",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309885272_czbt4",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309894649_ft8pv",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309901880_0j5y1",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309909577_p6cn0",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309924216_m8t6j",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309929000_l2sz1",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309941857_lpivg",
+      "professorId": "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309948856_rpft4",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309956672_ez305",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309963440_45apc",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309973296_gdcsq",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309979496_k509l",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772309994800_jrqeo",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_PROJETO_DE_VIDA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310003889_m480q",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310008968_z12gw",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310016201_dbwaa",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310027145_mpkb7",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310033464_3l5dp",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310041584_412ki",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310047000_64ewy",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310055521_7mhtg",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_6_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310149089_3s996",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310158856_plgwx",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310170728_sigva",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310181585_m15z3",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310191944_rermz",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310197321_1i3bw",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310208376_ugb5z",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310224465_y7svj",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310228608_l3gx8",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310237904_6z8r5",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310247270_x17u6",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310251304_cgee9",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310264904_icdv0",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310275760_c2ius",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310286953_ayjyk",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310298200_wjle6",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310303761_o57d3",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310314401_wj3au",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310319537_lzc68",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310331409_ibwms",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310348785_tomuc",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310357288_rgaa4",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310366961_om6ow",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310375384_kwotq",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310384472_7hzel",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310388897_8lfa4",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310401200_rlukh",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310415747_sx6c9",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310425417_1lddr",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310430320_t02x9",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310439024_j1z7c",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310449224_jtfbg",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310454544_qe2nz",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310461920_tl0nm",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310466721_kakb6",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310480512_kbl11",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310495345_lxsgl",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310507848_26kog",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772310516713_2j8em",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772310520896_jxhna",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772310523624_h1vc5",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772310581352_b9sty",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_PROJETO_DE_VIDA",
+      "turmaId": "turma_6_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310631186_gmu1b",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310636160_9tqz2",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310670002_ygmu9",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310674050_kfcyo",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310681105_6klh5",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310689713_pfvkf",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310693392_879l5",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310704802_4w4eb",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310708481_r6690",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310716833_tijm0",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310723865_m8uib",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310729905_zo7jm",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310738433_v6vnu",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310747865_polbf",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310753153_ojoyl",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310769065_twgak",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_PROJETO_DE_VIDA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310785536_ouuuc",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310793489_jr8p4",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310797387_c0n8a",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310805841_alnq6",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310814433_n0ndq",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310821346_gbjhy",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310825521_6qenu",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310835457_gw46f",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310840269_faut4",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310847505_5h97v",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310852017_lc90z",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310863441_x5qw1",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310869129_uv70h",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310879961_1sagp",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310886017_13z9e",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310895521_wmced",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310898442_61cc5",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310904249_4ywqz",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310912585_fl9zc",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310918233_4b8it",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310925665_t8lkf",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310928410_e0jnq",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772310939033_utmuv",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772310943890_fpkpq",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772310947155_v70lw",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772310949762_1pk7w",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_6_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772311020698_k8re6",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311024130_1z3hf",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311034729_rlt4f",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311047656_jd5kz",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311063377_4gyle",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311070865_hpufq",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311082785_ixi25",
+      "professorId": "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311098281_owkym",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311108121_lomui",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311111929_jlmkg",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311119361_ek37r",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311129801_5bmzv",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311142017_8a4to",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311148553_mi5h4",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311158577_uuqwx",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311172401_o09jt",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311177257_n15mc",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311187545_60z78",
+      "professorId": "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311194537_s9v7o",
+      "professorId": "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311202729_e4j3v",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311213585_xwz2m",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311225505_sab8g",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311232889_kfizs",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311242905_j4gra",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311250642_f7j2f",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311259657_9ga92",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311263057_81pkh",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311273273_o0eua",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_PROJETO_DE_VIDA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311287185_er393",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311299209_d6sav",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311312160_duys9",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311324041_v93rk",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311328409_fu8eo",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311335809_5djce",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311339457_xlnnq",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311346969_tr2kt",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311354153_0gze8",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311359809_8hro4",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311363929_xtlsz",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772311367681_rtqvw",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772311372385_w97j2",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772311375553_x0gj2",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_7_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772311599673_ophj7",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311611545_080w6",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311616521_vevhj",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311624489_30lym",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311633841_1pb2a",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311637673_w5s58",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311646089_u56t9",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311657769_7si2m",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311677993_321sq",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311681441_iee5n",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311691753_1pcoc",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311701601_bef5y",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311714313_tus17",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311717649_1xnob",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311726537_ahw93",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311748345_7kkcy",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311752097_1r6nj",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311759193_v2ixk",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311764977_wbwqq",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311773761_oh25f",
+      "professorId": "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311783009_qhbbf",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311796001_wtkoh",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311801281_lsy2a",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311812881_xcwkc",
+      "professorId": "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311819241_atzm1",
+      "professorId": "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311827017_qt842",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311835265_8cqnu",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311842537_2qsqz",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311858217_k0m2o",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311865082_r61vw",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311868041_jwux6",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772311885146_r9lvn",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312215745_wkmoy",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_PROJETO_DE_VIDA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312231577_ddphd",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312250209_po74r",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312259946_uz0ry",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312268154_rab7s",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312271857_a4u6t",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312278737_doztf",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312283305_zv8qw",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_7_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312388593_8n73k",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312396618_hdap9",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312404106_ewooa",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312408066_ahmp9",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312417753_fey0v",
+      "professorId": "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312429897_r4laf",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312433233_91fxp",
+      "professorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312441801_ypx6y",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312451313_bxegl",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312463537_zei5j",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312474353_5oeb9",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312478529_ao1qj",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312488257_a53mp",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312496826_i85wm",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312503161_ywqnn",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312515625_7yb2y",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312519729_17j16",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312530368_lycqb",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312536675_ccmve",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312547049_50d74",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312552057_xshqz",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312573825_5kqu4",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312582498_biox6",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_PROJETO_DE_VIDA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312596449_jcvto",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312600377_4o915",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312620745_6zsgx",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312630657_nprna",
+      "professorId": "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312640481_p599z",
+      "professorId": "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312651938_5egz9",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312662105_56vcx",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312666769_pdd2n",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312680305_ntg6d",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312688091_wn5id",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312695802_do9ls",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312703650_pbvjq",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312706689_qnz90",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312714538_xl5cx",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312720881_r7rr2",
+      "professorId": "prof_SILVIA_MONTEIRO_ROCHA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312728354_ni1c0",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772312732593_d60pa",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772312737226_2mbl5",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772312740633_4gew9",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_7_ANO_C_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772312858985_9i52h",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312865153_kbvqp",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312871953_66l8j",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312875370_etlcb",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312881737_48c91",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312893426_a3ya2",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312898601_kzsdl",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312910753_vsdp3",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312914603_f9m30",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312921898_m6j1g",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312933050_emwyr",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312936754_qouiq",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312953682_6q0ea",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312961017_bcwav",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312980889_lz2t6",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312992609_yokcq",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772312998057_2lali",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313015449_02zgs",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313018755_y7198",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313029310_ga5dw",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313034273_o3mwz",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313042625_2r3av",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_PROJETO_DE_VIDA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313053161_25wy1",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313064934_byqki",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313076585_mixz2",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313083721_tgt8y",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313087514_a7ax8",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313096851_kbmoy",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313107546_tmybp",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313115953_4kqu6",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313118513_tjqjz",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313128897_8qh88",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313132483_2nshl",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313142313_e0122",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313146609_yfgez",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313156849_36f6k",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313166809_x7pjo",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313177194_vxvbe",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313183834_tqk78",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313187923_9i7ph",
+      "professorId": "prof_MARCOS_AURELIO_MASCAGNI",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_8_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313257945_gls0z",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313260881_n2t6q",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313269697_koohf",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313275657_7z1c1",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313287913_gde9w",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313299249_hzubm",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313303497_yhtg7",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_EDUCAO_FINANCEIRA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313314201_q4w82",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313319323_k3htz",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313329297_xe2qc",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313338706_3x2qv",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313347924_9txqp",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313357681_37i11",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313364369_nwjaf",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313373346_wzebk",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313384353_gdybh",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313389625_fai7g",
+      "professorId": "prof_SILVIA_ELIANE_STORTI",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313399489_mddv4",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313406074_8y63k",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313416209_vedwd",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313425081_dfjse",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_PROJETO_DE_VIDA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313431577_3hfft",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313434538_zwrt6",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313447537_p8nzv",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313451378_txki6",
+      "professorId": "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313458305_0njw3",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313464538_4z4yg",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313479593_ghkeb",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313485481_m53n3",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313495393_nlwwu",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313500818_26ndq",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313551953_aboaq",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313559178_dchsp",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313566193_kwi59",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313575193_sahmo",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313585137_yteoo",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313596234_6o8yd",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313603090_8wget",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313607553_c3che",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313610738_gnh6n",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_8_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313844873_o671q",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313849425_dp2h2",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313858458_1vrqu",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313862433_fsnw3",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313870881_vww19",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313877681_lo7i2",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313881523_e3cap",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313891882_93sb8",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313895873_xrj56",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313906441_vsh62",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313912682_aopbl",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313923594_1gqhp",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313930585_5bhw7",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313938450_ukr6r",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313942137_yyfs6",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313953849_i6xq2",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313957482_dlvk3",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313965969_epxwd",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313969162_rqyao",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313979314_h15kf",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313990313_68jbp",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772313997379_oovk6",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314004417_y30dq",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314014721_cf6gv",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314018274_9wuz0",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314026259_w4nap",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314030876_h0iw6",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314037393_ng2fs",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314048753_jjhe6",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314060841_vma0u",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314067097_66z7e",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314080818_ryqai",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314084259_qs6gn",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314094539_lz6mt",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314098731_3u14r",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314107033_iwsr5",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314118241_k2i5a",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314128041_bkuqa",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_PROJETO_DE_VIDA",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314132417_i8e3f",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772314135834_a3mii",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772314140209_8enp4",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772314143514_s7lva",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_9_ANO_A_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772314279225_3e6w6",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314283593_qp59z",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314290689_bt50z",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314295091_e02im",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314304657_e0998",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314309274_rvqeu",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314315018_sirs6",
+      "professorId": "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+      "disciplinaId": "disc_PRATICAS_EXPERIMENTAIS",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 1,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314323297_9bd5g",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314328506_a7xq5",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_TECNOLOGIA_E_INOVACAO",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314335073_3xt9h",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314338882_7fvrc",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314344899_dqcxs",
+      "professorId": "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+      "disciplinaId": "disc_LINGUA_INGLESA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314353017_gtw23",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314361066_49a4n",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314366059_6v5vt",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__LNGUA_PORTUGUESA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 2,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314374889_ve3du",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314382394_xzgyt",
+      "professorId": "prof_MILENE_APARECIDA_MELA_NAKAO",
+      "disciplinaId": "disc_ORIENTAO_DE_ESTUDO__MATEMTICA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314393730_xk9lq",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314404722_p7wa8",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314408762_xwthq",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_CIENCIAS",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314417147_0j90b",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314424131_me24q",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314432594_r1hke",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_PROJETO_DE_VIDA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 3,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314448026_zqcyj",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314462826_7fd68",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_REDAO_E_LEITURA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314471001_65v8b",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314475434_51omm",
+      "professorId": "prof_TIAGO_DA_SILVA_BARBOSA",
+      "disciplinaId": "disc_HISTORIA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314485874_zab7u",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314489402_tpnmx",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_ESPORTEMSICAARTE",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314499658_ca5xm",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 8,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314503874_j40c3",
+      "professorId": "prof_JOSELI_MARIA_DA_SILVA",
+      "disciplinaId": "disc_GEOGRAFIA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 4,
+      "horario": 9,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314511626_bfp1r",
+      "professorId": "prof_CAMILA_TELLA_GUERRA",
+      "disciplinaId": "disc_ARTE",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 1,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314517612_woaf1",
+      "professorId": "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+      "disciplinaId": "disc_MATEMATICA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 2,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314527258_8ajxo",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 3,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314530379_4yl9s",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_ROBOTICA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 4,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314536994_m9rb7",
+      "professorId": "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO",
+      "disciplinaId": "disc_EDUCACAO_FISICA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 5,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314547178_c40a0",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 6,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314552706_desif",
+      "professorId": "prof_MARCELA_RODRIGUES_MENDONCA",
+      "disciplinaId": "disc_LINGUA_PORTUGUESA",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 7,
+      "compartilhada": false
+    },
+    {
+      "id": "aula_1772314557515_h8vnt",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772314560785_xntqq",
+      "professorId": "prof_EDMILSON_MINANTE",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772314564842_28le4",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 8,
+      "compartilhada": true
+    },
+    {
+      "id": "aula_1772314568210_8t7p9",
+      "professorId": "prof_PATRICIA_DURO_MARQUES",
+      "disciplinaId": "disc_ELETIVAS",
+      "turmaId": "turma_9_ANO_B_INTEGRAL_9H_ANUAL",
+      "diaSemana": 5,
+      "horario": 9,
+      "compartilhada": true
+    }
+  ],
+  "substituicoes": [],
+  "areas": [
+    {
+      "nome": "Linguagens",
+      "cor": "indigo",
+      "icone": "📖",
+      "descricao": "Língua Portuguesa, Arte, Educação Física, Língua Inglesa",
+      "id": "pwxujc14",
+      "professorIds": [
+        "prof_ADRIANA_PAULA_PAPASIDERO_LODI",
+        "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+        "prof_SILVIA_MONTEIRO_ROCHA",
+        "prof_CAMILA_TELLA_GUERRA",
+        "prof_MARCELA_RODRIGUES_MENDONCA",
+        "prof_VIVIANE_MIGUEL_PEDRO_ANTONIO"
+      ],
+      "articuladorId": "prof_JANAINA_DIAS_DE_MORAIS_COELHO",
+      "disciplinaIds": []
+    },
+    {
+      "nome": "Ciências da Natureza e Matemática",
+      "cor": "cyan",
+      "icone": "🔬",
+      "descricao": "Ciências, Biologia, Física, Química e matemática",
+      "id": "dfoqluwt",
+      "professorIds": [
+        "prof_EDMILSON_MINANTE",
+        "prof_MILENE_APARECIDA_MELA_NAKAO",
+        "prof_ANA_CAROLINA_MARIA_DE_SOUSA",
+        "prof_KAIQUE_AUGUSTO_CARDOSO_DE_SOUZA",
+        "prof_PATRICIA_DURO_MARQUES",
+        "prof_MARCOS_AURELIO_MASCAGNI",
+        "prof_SILVIA_ELIANE_STORTI"
+      ],
+      "articuladorId": "prof_EDMILSON_MINANTE",
+      "disciplinaIds": []
+    },
+    {
+      "nome": "Ciências Humanas",
+      "cor": "amber",
+      "icone": "🌍",
+      "descricao": "História, Geografia, Filosofia, Sociologia",
+      "id": "d3k3tqda",
+      "professorIds": [
+        "prof_MARIANA_CRISTINA_PIMENTA_NEGRI",
+        "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+        "prof_TIAGO_DA_SILVA_BARBOSA",
+        "prof_JOSELI_MARIA_DA_SILVA"
+      ],
+      "articuladorId": "prof_RENATA_APARECIDA_IZILIANI_CHERUBIM",
+      "disciplinaIds": []
+    }
+  ],
+  "configuracoes": {
+    "limiteAulasSemanais": 32,
+    "horarios": [
+      {
+        "aula": 1,
+        "inicio": "07:00",
+        "fim": "07:50"
+      },
+      {
+        "aula": 2,
+        "inicio": "07:50",
+        "fim": "08:40"
+      },
+      {
+        "aula": 3,
+        "inicio": "08:55",
+        "fim": "09:45"
+      },
+      {
+        "aula": 4,
+        "inicio": "09:45",
+        "fim": "10:35"
+      },
+      {
+        "aula": 5,
+        "inicio": "10:35",
+        "fim": "11:25"
+      },
+      {
+        "aula": 6,
+        "inicio": "12:25",
+        "fim": "13:15"
+      },
+      {
+        "aula": 7,
+        "inicio": "13:15",
+        "fim": "14:05"
+      },
+      {
+        "aula": 8,
+        "inicio": "14:20",
+        "fim": "15:10"
+      },
+      {
+        "aula": 9,
+        "inicio": "15:10",
+        "fim": "16:00"
+      }
+    ]
+  },
+  "exportadoEm": "28/02/2026, 19:19:58",
+  "versao": "1.0"
+}
