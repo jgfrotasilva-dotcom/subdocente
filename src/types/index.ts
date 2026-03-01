@@ -21,6 +21,7 @@ export interface Atribuicao {
 export interface Professor {
   id: string;
   nome: string;
+  telefone?: string; // WhatsApp com DDD, ex: 11999999999
   disciplinas: string[]; // IDs das disciplinas (mantido para compatibilidade)
   turmas: string[]; // IDs das turmas (mantido para compatibilidade)
   atribuicoes: Atribuicao[]; // Atribuições específicas com quantidade de aulas
